@@ -1,0 +1,20 @@
+body {font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+font-weight: bolder;
+font-size:30px;}
+#body1{background:#EAE9E9;}
+#body2{background:#B7CADB;}
+#body3{background:#C1A3A3;}
+#body4{background:#D3E4CD;}
+
+#center{margin-top: 20%;}
+h1{color: darkred;}
+h2{color: darkgoldenrod;}
+h3{color: darkgreen;}
+h4{color: darkblue;}
+h5{color: darkmagenta;}
+h6{color: darkorange;}
+
+@media  {
+    body{text-align: center;}
+}
