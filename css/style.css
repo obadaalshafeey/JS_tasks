@@ -8,12 +8,14 @@ font-size:30px;}
 #body4{background:#D3E4CD;}
 
 #center{margin-top: 20%;}
-h1{color: darkred;}
+h1{color: darkblue;}
 h2{color: darkgoldenrod;}
 h3{color: darkgreen;}
-h4{color: darkblue;}
+h4{color: darkred;}
 h5{color: darkmagenta;}
 h6{color: darkorange;}
+.fav{color:darkgreen;}
+.line {background:goldenrod; height:3px;}
 
 @media  {
     body{text-align: center;}
