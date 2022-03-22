@@ -2,7 +2,7 @@
 let stars= "";
 
 for (let i=0; i<=5; i++){
-    document.write(stars+ '\n');
+   
     for ( let j=0; j<i; j++ ) {
         stars += " * ";   
       
@@ -13,4 +13,4 @@ for (let i=0; i<=5; i++){
 console.log(stars);
 let x= (alert(stars));
 
-
+//  document.write(stars+ '\n');
