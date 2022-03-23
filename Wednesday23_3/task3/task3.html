@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing images</title>
+</head>
+<body>
+ 
+    <div><select id="imgs" onchange="setimg()">
+        <option value="1">No select</option>
+        <option value="2">Jordan</option>
+        <option value="3">German</option>
+        <option value="4">USA</option>
+        <option value="5">British</option>
+    </select>
+        <br><br>
+    <img src="https://st3.depositphotos.com/23594922/31822/v/600/depositphotos_318221368-stock-illustration-missing-picture-page-for-website.jpg" id="img" style="width: 350px; height: 350px; border: 2px solid #000; margin-top: 25px;">
+    </div>
+</body>
+
+<script>
+
+function setimg() {
+    let cont=document.getElementById("imgs").value;
+    if (cont==1) {document.getElementById("img").src="";document.getElementById("img").alt="None";}
+    else if (cont==2) {document.getElementById("img").src="https://portal.jordan.gov.jo/wps/wcm/connect/f6982f38-ff26-44b9-9b4c-f9467444e0f0/1/Flag.jpg?MOD=AJPERES";document.getElementById("img").alt="Jordan";}
+    else if (cont==3) {document.getElementById("img").src="https://www.thoughtco.com/thmb/V0yPcu-PahN6Dk5qVm_Ng3yy0Z8=/1228x691/smart/filters:no_upscale()/GettyImages-595913035-58b5a1663df78cdcd87de8f1.jpg";document.getElementById("img").alt="German";}
+    else if (cont==4) {document.getElementById("img").src="https://besthqwallpapers.com/Uploads/5-12-2019/114170/thumb2-usa-flag-3d-silk-flag-american-flag-us-flag-3d-flag-of-usa.jpg";document.getElementById("img").alt="USA";}
+    else if (cont==5) {document.getElementById("img").src="https://videohive.img.customer.envatousercontent.com/files/221553097/UK%20BRITISH%20FLAG%20590.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=f4f5f5915b49cad6f9f75f0294086a58";document.getElementById("img").alt="British";}}
+
+</script>
+</html>

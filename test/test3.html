@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 onmouseover="myFunction()"><u>G r o u p   6</u></h1>
+
+<div id="mymember">
+  <p>Saja</p>
+  <p>Obada</p>
+  <!-- <p onclick="delMember(this)">tam</p> -->
+
+  <p id="i" onclick="remove(this)">tamara "del"</div>
+</div>
+<br><br><br><br>
+<p onmouseover="addMember()" style="color: darkred;  font-weight: bold; border: 2px #000 solid; width: 100px;"> add Member</p>
+<!-- <button onclick="addMember()">add Member</button> -->
+<!-- <button onclick="delMember(this)">delete Member</button> -->
+
+
+</body>
+
+
+<script>
+    function addMember() {
+    // Create an "p" node:
+    let tam = document.createElement("p");
+    // Create a text node:
+    let textnode = document.createTextNode("Tamara");
+    // Append the text node to the "p" node:
+    tam.appendChild(textnode);
+    // Append the "li" node to the list:
+    document.getElementById("mymember").appendChild(tam);
+    }
+/////////////////////////////////////////////
+function remove(el) {
+  var element = el;
+  element.remove();
+}
+    </script>
+
+
+</html>
