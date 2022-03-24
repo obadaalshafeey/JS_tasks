@@ -6,6 +6,14 @@ font-size:30px;}
 #body2{background:#B7CADB;}
 #body3{background:#C1A3A3;}
 #body4{background:#D3E4CD;}
+#body5{background:#FEECE9;}
+#body6{background:#CCD1E4;}
+#body7{background:#9D9D9D;}
+#body8{background:#B4CFB0;}
+#body9{background:#C6D57E;}
+#body10{background:#E8D0B3;}
+
+
 
 #center{margin-top: 20%;}
 h1{color: darkblue;}
@@ -16,7 +24,25 @@ h5{color: darkmagenta;}
 h6{color: darkorange;}
 .fav{color:darkgreen;}
 .line {background:goldenrod; height:3px;}
+#line {background:goldenrod; height:3px;}
 
-@media  {
-    body{text-align: center;}
+
+#p1{color:#02475E ; }
+#p2{color:#FFD32D ; }
+#p3{color:#D885A3 ; }
+#p4{color:#D82148 ; }
+#p5{color:#357C3C ; }
+#p6{color:#781C68 ; }
+#p7{color:#A267AC ; }
+#p8{color:#4B8E8D ; }
+#p9{color:#E60965 ; }
+#p10{color:#2C061F ; }
+#p11{color:#064635 ; }
+#p12{color:#db456f ; }
+#p13{color:#570530 ; }
+#p14{color:#394867 ; }
+#p15{color:#595260 ; }
+
+
+@media  {     body{text-align: center;}
 }

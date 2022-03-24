@@ -13,12 +13,12 @@
     <option value="Courier">Courier</option>
      </select>  
 
-     <select name="font_size" id="fsize" onchange="size()">
+     <select name="font_size" id="fsize" onchange="size(this)">
         <option value="12">12</option>
         <option value="26">26</option>
         <option value="34">36</option>
-   
     </select>
+
 <label>Italic <input type="checkbox" name="italic" id="italic" onchange="Italic();"></label>
 <label>Bold <input type="checkbox" name="bold" id="bold"  onchange="Bold();"></label>
 <label>Underline <input type="checkbox" name="underline" id="line" onchange="Underline();"></label>
@@ -34,13 +34,13 @@
             text.style.fontFamily = ff.value;
         }
 
-        function size() {
-        let fs=document.getElementById("fsize").value;
-        if (fs=="12"){
+        function size(x) {
+        let x= value;
+        if (value=="12"){
         document.getElementById("txt").style.fontSize="12px";  }
-        else if(fs=="26") {
+        else if(value=="26") {
         document.getElementById("txt").style.fontSize="26px";  }
-        else if(fs=="34") {
+        else if(value=="34") {
         document.getElementById("txt").style.fontSize="34px";  }
 }
 
