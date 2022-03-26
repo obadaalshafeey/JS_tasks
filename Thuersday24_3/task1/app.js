@@ -8,8 +8,7 @@ var persons = [
     { name: { first: 'Soso', last: 'Al-Amora' }, age: 67 }
   ];
 /*
-1
-Create an object represents you have your first name, last name, age, dob(date of birth), favorite food (3),favorite movie (5)
+1Create an object represents you have your first name, last name, age, dob(date of birth), favorite food (3),favorite movie (5)
 */
 document.getElementById("start").innerHTML="Full Reslut in console <br> <hr id='line'>";
 
@@ -28,11 +27,9 @@ let  tam = {
   favoriteMovie: ["Mr. Robot", "Passengers", "Mesh Ana"] };
 
 console.log(tama);
-  document.getElementById("p1").innerHTML="Q1<br>My name  " + tam.Fname + "  " + tam.Lname +'<br>' + '  I`m  ' + tam.age + '  my birthd  '+ tam.dob + '<br>  I love to eat  ' + tam.favFood   + '<br>' + '   I watch this movies  ' + tam.favMovie  +"<hr id='line'>";
+document.getElementById("p1").innerHTML="Q1<br>My name  " + tam.Fname + "  " + tam.Lname +'<br>' + '  I`m  ' + tam.age + '  my birthd  '+ tam.dob + '<br>  I love to eat  ' + tam.favFood   + '<br>' + '   I watch this movies  ' + tam.favMovie  +"<hr id='line'>";
   
-  /*
-  2
-  Using the varabile persons   Create a function called firstName   that accept an object
+  /*  2  Using the varabile persons   Create a function called firstName   that accept an object
   and return all the first name of the person insides  
   Ex: firstName(persons) => ['John', 'Alex', 'Alice', 'Thor', 'Soso']
   */
@@ -74,22 +71,20 @@ function average(x) {
 
   function olderPerson(x) {
     var maxAge = x[0].age;
-    var indexOlder = 0;
+    var index = 0;
     for (var i = 1; i < x.length; i++) {
       if (maxAge < x[i].age) {
         maxAge = x[i].age;
-        indexOlder = i;
+        index = i;
       }
     }
-    return x[indexOlder].name.first + " " + x[indexOlder].name.last;
+    return x[index].name.first + " " + x[index].name.last;
   }
   console.log('\n Q4    olderPerson \n', olderPerson(persons));
   document.getElementById("p4").innerHTML="Q4  olderPerson <br>" +  olderPerson(persons) +"<hr id='line'>" ;
 
  
-  /*
-  5
-  Using the varabile persons   Create a function called longestName   that accept an object
+  /*  5  Using the varabile persons   Create a function called longestName   that accept an object
   and return the full name of the person have longest full name   
   Ex: longestName(persons) => "Soso Al-Amora"
   */
@@ -106,30 +101,21 @@ function average(x) {
     }
     return x[loo].name.first + " " + x[loo].name.last;
   }
-
   console.log('\n  Q5  longestName \n', longestName(persons));
   document.getElementById("p5").innerHTML="Q5    longestName  <br>" +  longestName(persons) +"<hr id='line'>" ;
-  
-  /*.length
-  6
-  Using the varabile persons
-  Create a function called longestName
-  that accept an object
-  and return the full name of the person have longest full name
+  ///.length
+
+  /*  6  Using the varabile persons  Create a function called longestName
+  that accept an object   and return the full name of the person have longest full name
   
   Ex: longestName(persons) => "Soso Al-Amora"
   */  
   //////////////////////////////////////////////////////////////////
   
   /*
-  7
-  Create a function called repeatWord
-  that accept a string
-  and return an object that represents how many times each word repeat
-  ** no matter it is upper case or lower case
-  ** Search on MDN about something can cut the string to words??
-  
-  Ex: repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO")
+  7  Create a function called repeatWord  that accept a string  and return an object that represents how many times each word repeat
+  ** no matter it is upper case or lower case  ** Search on MDN about something can cut the string to words??
+    Ex: repeatWord("My name is alex mercer class name B baba mama hello Hello HELLO")
   => {
     my:1,
     name:2,
@@ -145,23 +131,23 @@ function average(x) {
   */
     
 var str="My name is alex mercer class name B baba mama hello Hello HELLO";
-// let word=text.toLowerCase();
+var word=str.toLowerCase();
 // console.log(word);
-function repeatWord(str) {
-    var arr = str.split(' ');
+function repeatWord(word) {
+    var arr = word.split(' ');
     var obj = {};
     for (var i = 0; i < arr.length; i++) {
-      if (obj[arr[i].toLowerCase()]) {
-        obj[arr[i].toLowerCase()] += 1
+      if (obj[arr[i]]) {
+        obj[arr[i]] += 1
       } else {
-        obj[arr[i].toLowerCase()] = 1
+        obj[arr[i]] = 1
       }
     }
     return obj;
   } 
-//   let word =repeatWord(str);
-  console.log('\n  Q7  repeatWord \n', repeatWord(str));
-  document.getElementById("p7").innerHTML="Q7    repeatWord  <br>"+   repeatWord(str) +"<hr id='line'>" ;
+//   let word =repeatWord(word);
+  console.log('\n  Q7  repeatWord \n', repeatWord(word));
+  document.getElementById("p7").innerHTML="Q7    repeatWord  <br>"+   repeatWord(word) +"<hr id='line'>" ;
 
   /*
   8
