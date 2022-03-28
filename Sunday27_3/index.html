@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>phone Store</title>
+    <style>
+        input, select, button{width:90%; font-size:20px;}
+        /* section {display:grid;        width: 100%;} */
+        /* .divTable{margin-left: 20%;} */
+        section{display: flex;}
+        .divForm,.divTable {  padding: 10px 15px;}
+        .divTable{margin-left:8%; width: 30%;border: 2px darkred solid;}
+         td{margin-left:4px; padding-left:8px; border: 2px #00f solid;}
+         tr{border: 2px #61f solid;}
+
+
+         @media (min-width: 320px)and (max-width : 420px){
+  .container{width: 80%;    font-size: 20px;}
+    dt{margin-bottom: 30px;}
+}
+@media (min-width: 422px)and (max-width : 560px){
+    .container{width: 80%;    font-size: 22px;}
+    dt{margin-bottom: 30px;}
+
+}
+        
+           </style>
+</head>
+<body>
+
+  <section class="contaner" style="width: 100%; font-size:20px;">
+      <div class="divForm">
+
+
+          <form action="" id="mobForm">
+            <fieldset>
+              <legend>Mobile Form</legend>
+            <label for="" id="userName">Name</label>
+            <br><input type="text" name="useName">
+            <br><br>
+            <label for="" id="devisType">Type</label>
+            <br>
+            <select name="typeNameD" id="typeName">
+              <option value="samsung">samsung</option>
+              <option value="apple">apple</option>
+              <option value="Huawi">Huawi</option>
+       </select>
+       <br><br>
+       <button type="submit">add device</button> 
+       </fieldset>
+        </form>
+
+
+      </div>
+      <div class="divTable">
+           <h3>User mobail info. </h3>
+        <table id="tableCon">
+          <thead id="headTa">
+                    <tr>
+                    <td>Name</td>
+                    <td>Type</td>
+                    <td>Price</td>
+                    <td>condition</td></tr>
+                     </thead>
+          <tbody id="boadTa"></tbody>
+          <tfoot id="footTa"></tfoot>
+        </table>
+
+      </div>
+  </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>

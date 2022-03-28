@@ -62,6 +62,7 @@ console.log('unshift' , array2);
 array2.pop();
 console.log('pop' , array2,);
 console.log ('\n')
+
 //////////////////////////////  8
 function middleOfArray(array) {
   var length = array.length;
