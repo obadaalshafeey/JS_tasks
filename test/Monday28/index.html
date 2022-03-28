@@ -5,34 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .result{
+            color: white;
+            background-color: rgb(179, 57, 36);
+            font-family: sans-serif;
+            padding: 20px;
+            margin-top: 10px;
+            width: fit-content;
+        }
+    </style>
 </head>
 <body>
-     <div id="dv"></div>
+
+    <h3>If you are going on a trip we suggest you check the weather!</h3>
+    <h4>choise one: <br><br>
+        &nbsp; &nbsp; 1) Sure <br><br>
+        &nbsp; &nbsp; 2)Careless</h4>
+    <input type="text" id="input" value="">
+    <button id="submit">submit</button>
+    <div id="result" class="result"></div>
+ 
+
+
+
  
 </body>
+
+
+
+
+
 
 <script>
 
 
+document.getElementById("submit").onclick = function(){
+let myPromise =  new Promise(function(myResolve, myReject){
+if(doctment.getElementById("input").vslue =="Sure"){
+     myResolve("It will be a successful trip"); // when successful 
+}
+else { 
+    myReject("You will be disappointed"); // when error 
+}});
 
+myPromise.then(
+     function(myResolve){
+     document.getElementById("result").textContent= myResolve; 
+    }).catch( 
+        function(myReject) {
+            document.getElementById("result").teatContent =myReject; 
+        });
+    }
 
+// let array=[1,2,3,4];
+// let item=array.map(function(v, index, array)
+// {
+//     console.log(index , array);
+//     return  v+index;
+// // console.log("the sum is " , v ,"+",  index);
+// // console.log("the result is ", v+index);
+// }
+// )
+// console.log(item);
 
-
-
-
-
+/////////////////////*****************************************************///////////
+// let arr =['a','b','c'];
+// let ch='a';
+// arraychar=arr.map(function(v)
+// {
+//     return  v+ ch;
+// } )
+// console.log(arraychar);
  
 
-
-
-let e=[1,2,3];
-function add(e){ 
-for (let i=0; i<e.length;++i)
-{ let x= e[i]+i; 
-console.log(x); 
-}
-console.log(x);
-} 
+// let array = [1, 2, 3, 4];
+// // let sum = 0;
+// for (let i = 0; i < array.length; i++) {
+//     var x=array[i] + i ;
+//     // sum += ;
+// }
+// console.log(x);
 
 
 
@@ -42,7 +95,7 @@ console.log(x);
 // friend.set('D', "Dyar");
 // friend.set('R', "roya");
 // friend.set('H', "Hadi");
-// friend.set('T', "Tama");
+// friend.set('T', "Tamara");
 
 // // friend.get('D')
 // console.log(friend.get('D'));
@@ -67,7 +120,6 @@ console.log(x);
 //   console.log(" the result    ", v+index); 
 // }  )
 
-// console.log(item) ;
-
+// // console.log(item) ;
 </script>
 </html>
