@@ -27,13 +27,14 @@ function userData(useName, typeNameD) {
     // this.price = price(50, 600);
     this.price = Math.floor(Math.random() * (600 - 50 ) + 50);
     
-        let state; if(this.price <= 100){
+        let state;
+         if(this.price <= 100){
                      state= "used";
                     } 
                     else {
                     state= "New Device";
                     };
-                   this.state =state;
+     this.state =state;
 
     // let x;
     // if (this.price<100){

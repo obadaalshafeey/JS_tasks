@@ -44,7 +44,7 @@ h6{color: darkorange;}
 #p15{color:#595260 ; }
 
 input, select, button{width:90%; font-size:20px;}
-section{display: flex;width: 100%; font-size:20px;}
+section{display: flex;justify-content:space-between; width: 90%; font-size:20px;}
 .divForm,.divTable {  padding: 10px 15px;}
 .divTable{margin-left:8%; width: 30%;border: 2px darkred solid;}
 td{margin-left:4px; padding-left:8px; border: 2px #00f solid;}
@@ -71,6 +71,19 @@ fieldset input[type=text], select {
 .btn-mform:hover{
     border: #570530 2px inset;
 }
+
+
+.dvimg {
+   width:350px;
+    height:300px ; 
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQbxn3OjdSo-QIgzZ52YY3abhFCZYCYzmZFw&usqp=CAU");
+   background-repeat:no-repeat;
+padding:20px;
+border-top-left-radius:28px ;
+}
+
+
+
 
 @media  { body{text-align: center;}
 }
