@@ -43,6 +43,46 @@ h6{color: darkorange;}
 #p14{color:#394867 ; }
 #p15{color:#595260 ; }
 
+input, select, button{width:90%; font-size:20px;}
+section{display: flex;width: 100%; font-size:20px;}
+.divForm,.divTable {  padding: 10px 15px;}
+.divTable{margin-left:8%; width: 30%;border: 2px darkred solid;}
+td{margin-left:4px; padding-left:8px; border: 2px #00f solid;}
+tr{border: 2px #61f solid;}
 
-@media  {     body{text-align: center;}
+fieldset{ border:#570530 4px inset}
+
+
+fieldset input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: rgba(204, 204, 204, 0.336);}
+
+.btn-mform{
+    border-radius: 8px;
+    border: #781C68 2px groove; 
+    background: ;
 }
+.btn-mform:hover{
+    border: #570530 2px inset;
+}
+
+@media  { body{text-align: center;}
+}
+
+@media (min-width: 320px)and (max-width : 420px){
+    .container{width: 80%;    font-size: 20px;}
+      dt{margin-bottom: 30px;}
+      section{display: grid;}
+  }
+  @media (min-width: 422px)and (max-width : 560px){
+      .container{width: 80%;    font-size: 22px;}
+      dt{margin-bottom: 30px;}
+      section{display: grid;}
+  
+  }

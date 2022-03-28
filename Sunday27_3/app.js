@@ -26,13 +26,23 @@ function userData(useName, typeNameD) {
     this.typeNameD = typeNameD;
     // this.price = price(50, 600);
     this.price = Math.floor(Math.random() * (600 - 50 ) + 50);
-    // this.state = price < 100 ?  "used"  : "New Divace";
-    // this.state = { if(price < 100){
-    //                 state= "used";
-    //             } else if( price > 100 ){
-    //                 console.log("Go to driving school.");}
-    //             }
-                    
+    
+        let state; if(this.price <= 100){
+                     state= "used";
+                    } 
+                    else {
+                    state= "New Device";
+                    };
+                   this.state =state;
+
+    // let x;
+    // if (this.price<100){
+    //     x= 'Used';
+    // }else{
+    //     x= 'New Device';
+    // };
+    // this.cond= x;
+                      
     userInfo.push(this);
     renderOrder();
     storeInLocalStorage();
@@ -60,13 +70,15 @@ new userData(useName, typeNameD);
 handleSubmit();        // Second Step
 
 function renderOrder() {
-        let trRow = document.createElement("tr");
-        let tdData1 = document.createElement("td");
-        let tdData2 = document.createElement("td");
-        let tdData3 = document.createElement("td");
-        let tdData4 = document.createElement("td");
-
-for (let i = 0; i < userInfo.length; i++) {
+       
+    tbodyItem.textContent= " ";
+    
+    for (let i = 0; i < userInfo.length; i++) {
+    let trRow = document.createElement("tr");
+    let tdData1 = document.createElement("td");
+    let tdData2 = document.createElement("td");
+    let tdData3 = document.createElement("td");
+    let tdData4 = document.createElement("td");
         tbodyItem.appendChild(trRow);
         trRow.appendChild(tdData1);
         trRow.appendChild(tdData2);
@@ -78,10 +90,6 @@ for (let i = 0; i < userInfo.length; i++) {
         tdData4.textContent = userInfo[i].state;
     }
 }
-
-
-
-
 
 document.getElementById("headTa").style.color = "blue";
 
