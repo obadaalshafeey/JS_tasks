@@ -164,17 +164,18 @@ function repeatWord(word) {
   for(var i=0; i<char.length; i++){
      after += char.charAt(i) + ' ';     
   }
-var space =after;
+var space =after.toLowerCase();
   function repeatChar(space) {
     var arr = space.split(' ');
     var obj = {};
     for (var i = 0; i < arr.length; i++) {
-      if (obj[arr[i].toLowerCase()]) {
-        obj[arr[i].toLowerCase()] += 1
+      if (obj[arr[i]]) {
+        obj[arr[i]] += 1
       } else {
-        obj[arr[i].toLowerCase()] = 1
+        obj[arr[i]] = 1
       }
     }
+    // var strobj=json.stringify(obj)
     return obj;
   }
   console.log('\n  Q8  repeatChar \n', repeatChar(space));
@@ -200,7 +201,7 @@ var space =after;
     return result;
   }
 
-  console.log('\n  Q9  \n', selectFromObject(obj, arr));
+  console.log('\n  Q9  selectFromObject \n', selectFromObject(obj, arr));
   document.getElementById("p9").innerHTML="Q9    select  <br>" + selectFromObject(obj.a, arr[0]) +"<hr id='line'>" ;
   
   
@@ -228,7 +229,7 @@ var space =after;
     return result;
   }
 
-console.log('\n  Q10  \n', objectToArray(obj));
+console.log('\n  Q10 objectToArray \n', objectToArray(obj));
   document.getElementById("p10").innerHTML="Q10    objectToArray  <br>" + objectToArray(obj) +"<hr id='line'>" ;
 
 
@@ -253,7 +254,7 @@ console.log('\n  Q10  \n', objectToArray(obj));
     return obj;
   }
 
-  console.log('\n  Q11  \n', arrayToObject(arr));
+  console.log('\n  Q11  arrayToObject \n', arrayToObject(arr));
   document.getElementById("p11").innerHTML="Q11    select  <br>" + arrayToObject(arr) +"<hr id='line'>" ;
   
   /*
@@ -279,7 +280,7 @@ console.log('\n  Q10  \n', objectToArray(obj));
     return show;
   }
 //   var comment=onlyNumber(obj);
-  console.log('\n  Q12  \n', onlyNumber(obj));
+  console.log('\n  Q12 onlyNumber \n', onlyNumber(obj));
   document.getElementById("p12").innerHTML="Q12    onlyNumber  <br>" + onlyNumber(obj) +"<hr id='line'>" ;
 //   document.getElementById("p12").value = comment;
   
@@ -306,7 +307,7 @@ console.log('\n  Q10  \n', objectToArray(obj));
     return show;
   }
   
-  console.log('\n  Q13  \n', onlyString(obj));
+  console.log('\n  Q13 onlyString \n', onlyString(obj));
   document.getElementById("p13").innerHTML="Q13    onlyString  <br>" + onlyString(obj) +"<hr id='line'>" ;
 
   /*////////////////////////////////
@@ -332,7 +333,7 @@ console.log('\n  Q10  \n', objectToArray(obj));
     }
     return show;
   }
-  console.log('\n  Q14  \n', onlyArray(obj));
+  console.log('\n  Q14 onlyArray \n', onlyArray(obj));
   document.getElementById("p14").innerHTML="Q14    onlyArray  <br>" + onlyArray(obj) +"<hr id='line'>" ;
 
   /*
@@ -349,11 +350,10 @@ console.log('\n  Q10  \n', objectToArray(obj));
   function keysArray(obj) {
     var show = [];
     for (var i in obj) {
-      show.push(i);
-    }
+      show.push(i);    }
     return show;
   }
-  console.log('\n  Q15  \n', keysArray(obj));
+  console.log('\n  Q15  keysArray \n', keysArray(obj));
   document.getElementById("p15").innerHTML="Q15    keysArray  <br>" + keysArray(obj.movies) +"<hr id='line'>" ;
 
 
