@@ -350,7 +350,8 @@ console.log('\n  Q10 objectToArray \n', objectToArray(obj));
   function keysArray(obj) {
     var show = [];
     for (var i in obj) {
-      show.push(i);    }
+      show.push(i);
+    }
     return show;
   }
   console.log('\n  Q15  keysArray \n', keysArray(obj));
