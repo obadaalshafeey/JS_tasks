@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <title>Registeration Form</title>
+    <style>
+        .outter-container{width: 60%; }
+        form{font-size: 20px; }
+        input{background: #f1f1f1; border: 1px gray solid; height: 25px;width:200px;}
+  
+    </style>
+  
+</head>
+<body>
+    <!-- create registeration form contains :   ////
+ 1- first name  ////
+ 2- last name  ////
+ 3- birth date   ////
+ 4- email with confirmation(two inputs) ////
+ 5- password with confirmation(two inputs) ////-->   
+
+ <div class="outter-container">
+ <form action="#" id="regform">  
+   <!--  -->                      
+     <fieldset>
+         <legend>    <h1>Register</h1>
+</legend>
+  <div class="inner-container">
+    <p>Fill in this form to create an account.</p>
+    <hr>
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" id="fname" >&emsp;&emsp; <!---->
+
+    <label for="lname"><b>Last Name</b></label>&emsp;&emsp;
+    <input type="text" placeholder="Enter Last Name" name="lname" id="lname" >
+    <br><br>
+    <label for="email"><b>Email</b></label>&emsp;&emsp;
+    <input type="text" placeholder="Enter Email" name="email" id="email" >&emsp;&emsp;
+
+    <label for="cemail"><b>Confirm Email</b></label>&nbsp;&nbsp;
+    <input type="text" placeholder="Confirm Email" name="cemail" id="cemail" > <div id="notifi"></div>
+    <br>
+
+    <label for="start"><b>Birthday</b></label>&ensp;&nbsp;
+    <input type="date" id="birth" name="BD" value="2020-10-22"  min="1899-01-01" max="2030-12-31"  pattern="\d{4}-\d{2}-\d{2}" style="width: 68.5%;">
+    <br><br>
+
+    <label for="psw"><b>Password</b></label>&ensp;
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" >&emsp;&emsp;
+
+    <label for="cpsw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Enter Password" name="cpsw" id="cpsw" > <div id="notifi"></div>
+    <br><br>
+
+    <hr>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+</fieldset>
+ </div>
+
+
+</body>
+<script src="app.js"></script>
+</html>

@@ -22,14 +22,14 @@ async function outputlocation(city)
    let res = document.createElement("span");
    pargloc.appendChild(res)
 
-   let imgsrc = data[0].icon
+//    let imgsrc = data[0].icon.value;
 //    console.log(imgsrc);
-  document.getElementById("imag").src = `${imgsrc}`
+//   document.getElementById("imag").src = `${imgsrc}`
 
    res.innerHTML= `<h4>Location Name: ${data[0].display_name}</h4>
    <h5>lot: ${data[0].lat}</h5>
    <h5>lon: ${data[0].lon}</h5>
-  <h6>icon: ${data[0].imgsrc}</h4>    <hr>`
+  <h6>icon: ${ data[0].icon}</h4>    <hr>`
 //    let imgsrc = data[0].icon
 //    console.log(imgsrc);
 //   document.getElementById("imag").src = `${imgsrc}`
